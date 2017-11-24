@@ -5,7 +5,7 @@
     "url": "https://github.com/oscaralexander"
   },
   "bugs": {
-    "url": "https://github.com/oscaralexander/jquery-tnw-tabs/issues"
+    "url": "https://github.com/thenextweb/jquery-tnw-tabs/issues"
   },
   "dependencies": {
     "jquery": "^3.2.1"
@@ -23,7 +23,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "npx": "^9.7.1"
   },
-  "homepage": "https://brand.thenextweb.com",
+  "homepage": "https://design.thenextweb.com",
   "keywords": [
     "es6",
     "jquery",
@@ -36,7 +36,7 @@
   "name": "jquery-tnw-tabs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/oscaralexander/jquery-tnw-tabs.git"
+    "url": "https://github.com/thenextweb/jquery-tnw-tabs.git"
   },
   "scripts": {
     "build": "npx babel ./src/jquery.tnw-tabs.js --out-file ./dist/jquery.tnw-tabs.js",
