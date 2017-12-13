@@ -14,11 +14,20 @@ class TNWTabs {
     }
 
     init() {
+        let $activeTab
+
         this.$tabs = this.$el.find("[role='tab']")
         this.$tabPanels = this.$el.find("[role='tabpanel']")
 
         // Set click event handler
         this.$tabs.on(this.options.eventNameClick, this.onClickTab.bind(this))
+
+        // Check URL hash for active tab
+        if (window.location.hash !== '') {
+            if ($(`${window.location.hash}`).length) {
+                $(`${window.location.hash}`).trigger(this.options.eventNameClick)
+            }
+        }
     }
 
     onClickTab(e) {
@@ -41,6 +50,9 @@ class TNWTabs {
 
         // Unhide active tab panel
         $tabPanel.attr("aria-hidden", false)
+
+        // Update URL hash
+        window.location.hash = $tab.attr('id')
     }
 }
 
