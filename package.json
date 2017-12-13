@@ -32,7 +32,7 @@
     "tabs"
   ],
   "license": "MIT",
-  "main": "./src/jquery.tnw-tabs.js",
+  "main": "./dist/jquery.tnw-tabs.js",
   "name": "jquery-tnw-tabs",
   "repository": {
     "type": "git",
