@@ -14,8 +14,6 @@ class TNWTabs {
     }
 
     init() {
-        let $activeTab
-
         this.$tabs = this.$el.find("[role='tab']")
         this.$tabPanels = this.$el.find("[role='tabpanel']")
 
